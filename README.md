@@ -80,23 +80,7 @@ Edit `variables.tf` to change:
 - `routing.tf` - Route tables and associations
 - `variables.tf` - Input variables
 - `outputs.tf` - Exported values
-- `versions.tf` - Provider configuration
 
-## Cost Considerations
-
-**Monthly cost estimate** (ap-south-1 region):
-- NAT Gateway: ~$32/month + data transfer
-- Elastic IP (attached): Free
-- VPC/Subnets/Route Tables: Free
-
-💡 **Cost optimization**: For dev/test environments, consider using a single NAT Gateway or NAT instances instead.
-
-## Security
-
-- No resources exposed to public internet by default
-- Private subnets have no direct internet gateway route
-- All outbound traffic from private subnets goes through NAT Gateway
-- Network ACLs can be added for additional layer
 
 ## Use Cases
 
@@ -107,6 +91,3 @@ This VPC setup supports:
 - Lambda functions in VPC
 - Any workload requiring private subnet isolation
 
-## Author
-
-Built for production use in startup environments. Deployed across dev, test, preprod, and prod.
