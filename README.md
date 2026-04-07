@@ -1,6 +1,6 @@
 # AWS VPC Infrastructure with Terraform
 
-Production-ready AWS VPC setup with public/private subnet architecture, NAT Gateway, and complete routing configuration.
+AWS VPC setup with public/private subnet architecture, NAT Gateway and complete routing configuration.
 
 ## Architecture Overview
 
